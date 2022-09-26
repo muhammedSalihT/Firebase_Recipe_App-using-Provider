@@ -9,14 +9,14 @@ class CustomTextField extends StatelessWidget {
     required this.controller,
     this.suffixIcon,
     required this.showContent,
-    required this.validate,
+     this.validate,
   }) : super(key: key);
 
   final String fieldHeading;
   final TextEditingController controller;
   final Widget? suffixIcon;
   final bool showContent;
-  final FormFieldValidator<String> validate;
+  final FormFieldValidator<String>? validate;
 
   @override
   Widget build(BuildContext context) {
