@@ -9,7 +9,7 @@ class CustomTextField extends StatelessWidget {
     required this.controller,
     this.suffixIcon,
     required this.showContent,
-     this.validate,
+    this.validate, this.messanger,
   }) : super(key: key);
 
   final String fieldHeading;
@@ -17,6 +17,7 @@ class CustomTextField extends StatelessWidget {
   final Widget? suffixIcon;
   final bool showContent;
   final FormFieldValidator<String>? validate;
+  final Function? messanger;
 
   @override
   Widget build(BuildContext context) {
